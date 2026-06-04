@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+scipy
+xgboost
+scikit-learn
+pydantic
+google-genai
+python-dotenv
+pytest
