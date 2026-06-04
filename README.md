@@ -25,7 +25,7 @@ Paste any supplier email. Grok reads it and returns a structured risk assessment
 
 No external datasets needed. Everything is generated at startup by `data/supply_chain_data.py`.
 
-It creates 730 days of daily demand across 3 SKUs (Rice 5KG, Oil 1L, Sugar 1KG) with trend, annual seasonality, weekend spikes, and realistic noise baked in. Inventory parameters — unit costs, lead times, service levels are hardcoded per SKU to reflect plausible FMCG values. The same random seed is used every time so results are deterministic and tests are reproducible.
+It creates 730 days of daily demand across 3 SKUs (Rice 5KG, Oil 1L, Sugar 1KG) with trend, annual seasonality, weekend spikes, and realistic noise baked in. Inventory parameters unit costs, lead times, service levels are hardcoded per SKU to reflect plausible FMCG values. The same random seed is used every time so results are deterministic and tests are reproducible.
 
 ## Running it
 
