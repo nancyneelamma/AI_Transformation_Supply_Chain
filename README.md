@@ -17,7 +17,7 @@ Trains an XGBoost model on 2 years of synthetic demand data and forecasts the ne
 Runs EOQ math to find the optimal order quantity, safety stock, and reorder point for each SKU. Cuts annual inventory cost by 40.7% (₹2,49,575) compared to a naive monthly ordering policy.
 
 **Tab 3 : Supplier Risk Agent**
-Paste any supplier email. Grok reads it and returns a structured risk assessment — tier, compounding factors, a recommended action, and the exact piece of information that would change the call. No API key? It falls back to a keyword-based analyser that at least reads your actual input rather than showing a hardcoded example.
+Paste any supplier email. Grok reads it and returns a structured risk assessment tier, compounding factors, a recommended action, and the exact piece of information that would change the call. No API key? It falls back to a keyword-based analyser that at least reads your actual input rather than showing a hardcoded example.
 
 ---
 
@@ -25,7 +25,7 @@ Paste any supplier email. Grok reads it and returns a structured risk assessment
 
 No external datasets needed. Everything is generated at startup by `data/supply_chain_data.py`.
 
-It creates 730 days of daily demand across 3 SKUs (Rice 5KG, Oil 1L, Sugar 1KG) with trend, annual seasonality, weekend spikes, and realistic noise baked in. Inventory parameters — unit costs, lead times, service levels — are hardcoded per SKU to reflect plausible FMCG values. The same random seed is used every time so results are deterministic and tests are reproducible.
+It creates 730 days of daily demand across 3 SKUs (Rice 5KG, Oil 1L, Sugar 1KG) with trend, annual seasonality, weekend spikes, and realistic noise baked in. Inventory parameters — unit costs, lead times, service levels are hardcoded per SKU to reflect plausible FMCG values. The same random seed is used every time so results are deterministic and tests are reproducible.
 
 ## Running it
 
@@ -50,7 +50,7 @@ XAI_API_KEY=your_key_here
 cd test && pytest test_supply_chain.py -v
 ```
 
-13 tests, all passing — covers data quality, EOQ formula correctness, ML accuracy, and LLM fallback behaviour.
+13 tests, all passing covers data quality, EOQ formula correctness, ML accuracy, and LLM fallback behaviour.
 
 ---
 
