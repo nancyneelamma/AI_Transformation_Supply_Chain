@@ -2,10 +2,6 @@
 
 Built for the Theseus AI Lab CXO Assessment. Three tabs, three AI approaches, one supply chain problem.
 
-## Video Link
-
-https://www.loom.com/share/f8dfdd755ef743cebe05ebd60260bd2e
-
 ---
 
 ## What it does
